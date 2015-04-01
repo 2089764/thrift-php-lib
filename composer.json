@@ -1,6 +1,6 @@
 {
     "name": "yxc023/thrift-php-lib",
-    "type": "library"
+    "type": "library",
     "description": "thrift php lib, use composer",
     "license": "MIT",
     "authors": [
