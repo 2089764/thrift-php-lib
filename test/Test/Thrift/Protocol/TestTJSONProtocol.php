@@ -28,6 +28,7 @@ use Test\Thrift\Fixtures;
 use Thrift\Transport\TMemoryBuffer;
 use Thrift\Protocol\TJSONProtocol;
 
+
 define( 'BUFSIZ', 8192 ); //big enough to read biggest serialized Fixture arg.
 
 require_once __DIR__.'/../../../../lib/Thrift/ClassLoader/ThriftClassLoader.php';
@@ -262,8 +263,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testVoid_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testVoid']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testVoid']
+			    );
     $args = new \ThriftTest\ThriftTest_testVoid_args();
     $args->read( $this->protocol );
   }
@@ -271,8 +272,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testString1_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testString1']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testString1']
+			    );
     $args = new \ThriftTest\ThriftTest_testString_args();
     $args->read( $this->protocol );
 
@@ -285,8 +286,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testString2_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testString2']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testString2']
+			    );
     $args = new \ThriftTest\ThriftTest_testString_args();
     $args->read( $this->protocol );
 
@@ -311,8 +312,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testDouble_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testDouble']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testDouble']
+			    );
     $args = new \ThriftTest\ThriftTest_testDouble_args();
     $args->read( $this->protocol );
 
@@ -325,8 +326,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testByte_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testByte']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testByte']
+			    );
     $args = new \ThriftTest\ThriftTest_testByte_args();
     $args->read( $this->protocol );
 
@@ -339,8 +340,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testI32_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testI32']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testI32']
+			    );
     $args = new \ThriftTest\ThriftTest_testI32_args();
     $args->read( $this->protocol );
 
@@ -353,8 +354,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testI64_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testI64']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testI64']
+			    );
     $args = new \ThriftTest\ThriftTest_testI64_args();
     $args->read( $this->protocol );
 
@@ -368,8 +369,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testStruct_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testStruct']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testStruct']
+			    );
     $args = new \ThriftTest\ThriftTest_testStruct_args();
     $args->read( $this->protocol );
 
@@ -383,8 +384,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testNest_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testNest']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testNest']
+			    );
     $args = new \ThriftTest\ThriftTest_testNest_args();
     $args->read( $this->protocol );
 
@@ -398,8 +399,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testMap_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testMap']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testMap']
+			    );
     $args = new \ThriftTest\ThriftTest_testMap_args();
     $args->read( $this->protocol );
 
@@ -413,8 +414,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testStringMap_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testStringMap']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testStringMap']
+			    );
     $args = new \ThriftTest\ThriftTest_testStringMap_args();
     $args->read( $this->protocol );
 
@@ -428,8 +429,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testSet_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testSet']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testSet']
+			    );
     $args = new \ThriftTest\ThriftTest_testSet_args();
     $args->read( $this->protocol );
 
@@ -443,8 +444,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testList_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testList']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testList']
+			    );
     $args = new \ThriftTest\ThriftTest_testList_args();
     $args->read( $this->protocol );
 
@@ -458,8 +459,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testEnum_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testEnum']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testEnum']
+			    );
     $args = new \ThriftTest\ThriftTest_testEnum_args();
     $args->read( $this->protocol );
 
@@ -473,8 +474,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testTypedef_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testTypedef']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testTypedef']
+			    );
     $args = new \ThriftTest\ThriftTest_testTypedef_args();
     $args->read( $this->protocol );
 
@@ -487,8 +488,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testMapMap_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testMapMap']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testMapMap']
+			    );
     $result = new \ThriftTest\ThriftTest_testMapMap_result();
     $result->read( $this->protocol );
 
@@ -501,8 +502,8 @@ class TestTJSONProtocol extends \PHPUnit_Framework_TestCase
   public function testInsanity_Read()
   {
     $this->transport->write(
-                TestTJSONProtocol_Fixtures::$testArgsJSON['testInsanity']
-                );
+			    TestTJSONProtocol_Fixtures::$testArgsJSON['testInsanity']
+			    );
     $result = new \ThriftTest\ThriftTest_testInsanity_result();
     $result->read( $this->protocol );
 
@@ -534,11 +535,14 @@ class TestTJSONProtocol_Fixtures
 
     self::$testArgsJSON['testI32'] = '{"1":{"i32":1073741824}}';
 
-    if (PHP_INT_SIZE == 8) {
+    if ( PHP_INT_SIZE == 8 )
+    {
       self::$testArgsJSON['testI64'] = '{"1":{"i64":'.pow( 2, 60 ).'}}';
       self::$testArgsJSON['testStruct'] = '{"1":{"rec":{"1":{"str":"worked"},"4":{"i8":1},"9":{"i32":1073741824},"11":{"i64":'.pow( 2, 60 ).'}}}}';
       self::$testArgsJSON['testNest'] = '{"1":{"rec":{"1":{"i8":1},"2":{"rec":{"1":{"str":"worked"},"4":{"i8":1},"9":{"i32":1073741824},"11":{"i64":'.pow( 2, 60 ).'}}},"3":{"i32":32768}}}}';
-    } else {
+    }
+    else
+    {
       self::$testArgsJSON['testI64'] = '{"1":{"i64":1152921504606847000}}';
       self::$testArgsJSON['testStruct'] = '{"1":{"rec":{"1":{"str":"worked"},"4":{"i8":1},"9":{"i32":1073741824},"11":{"i64":1152921504606847000}}}}';
       self::$testArgsJSON['testNest'] = '{"1":{"rec":{"1":{"i8":1},"2":{"rec":{"1":{"str":"worked"},"4":{"i8":1},"9":{"i32":1073741824},"11":{"i64":1152921504606847000}}},"3":{"i32":32768}}}}';

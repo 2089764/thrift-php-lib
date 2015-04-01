@@ -21,7 +21,7 @@
  * @package thrift.test
  */
 
-namespace Test\Thrift\Protocol;
+namespace test\Thrift\Protocol;
 
 use Thrift\ClassLoader\ThriftClassLoader;
 use Thrift\Serializer\TBinarySerializer;
@@ -62,3 +62,4 @@ class TestBinarySerializer extends \PHPUnit_Framework_TestCase
   }
 
 }
+
